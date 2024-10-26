@@ -2,6 +2,9 @@
 | ------------- | ---------- | -------- |
 | Lucky Santoso | 5025221050 | PBKK (D) |
 
+Video Demonstrasi :
+https://youtu.be/PPSbBG_6OEs
+
 # Final Project Laravel "Management Keluhan Mahasiswa TC"
 
 ## Installation
