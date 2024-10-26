@@ -19,20 +19,19 @@
             @include('layouts.navigation')
 
             <!-- Page Heading -->
-            @isset($header)
+            @if (isset($header))
                 <header class="bg-white shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
 
-                        @if(Session::has('notif.success'))
+                        @if (Session::has('notif.success'))
                         <div class="bg-blue-300 mt-2 p-4">
-                            <span class="text-white">{{Session::get('notif.success')}}
-                            </span>
+                            <span class="text-white">{{ Session::get('notif.success') }}</span>
                         </div>
                         @endif
                     </div>
                 </header>
-            @endisset
+            @endif
 
             <!-- Page Content -->
             <main>

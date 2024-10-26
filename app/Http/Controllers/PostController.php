@@ -20,7 +20,7 @@ class PostController extends Controller
     public function index(): Response
     {
         return response()->view('posts.index', [
-            'posts' => Post::orderBy('updated_at', 'desc')->get(),
+            'posts' => Post::orderBy('updated_at', 'desc')->paginate(10),
         ]);
     }
 
